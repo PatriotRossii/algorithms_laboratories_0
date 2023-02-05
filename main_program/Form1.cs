@@ -17,26 +17,26 @@ namespace main_program
             InitializeComponent();
         }
 
-        double Vvod(TextBox input)
+        double readInput(TextBox input)
         {
             return Convert.ToDouble(input.Text);
         }
 
-        double Sum_kv(double a, double b)
+        double squareSum(double a, double b)
         {
             return a * a + b * b;
         }
 
-        void Vyvod(TextBox output, double value) {
+        void writeOutput(TextBox output, double value) {
             output.Text = Convert.ToString(value);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double a = Vvod(textBox1);
-            double b = Vvod(textBox2);
-            double res = Sum_kv(a, b);
-            Vyvod(textBox3, res);
+            double a = readInput(textBox1);
+            double b = readInput(textBox2);
+            double res = squareSum(a, b);
+            writeOutput(textBox3, res);
         }
     }
 }
