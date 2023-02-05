@@ -19,9 +19,9 @@ namespace main_program
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            int res = a * a + b * b;
+            double a = Convert.ToDouble(textBox1.Text);
+            double b = Convert.ToDouble(textBox2.Text);
+            double res = a * a + b * b;
             textBox3.Text = Convert.ToString(res);
         }
     }
